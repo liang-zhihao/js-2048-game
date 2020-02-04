@@ -1,0 +1,164 @@
+p {
+
+  position: relative;
+  display: inline-block;
+  background: #bbada0;
+  padding: 15px 15px;
+  font-size: 25px;
+  height: 25px;
+  line-height: 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  color: white;
+  margin-top: 8px;
+  text-align: center;
+}
+
+body {
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+  color: #776e65;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  cursor: url("chrome-extension://jlgkpaicikihijadgifklkbpdajbkhjo/image/cursors/009@2.png"), default;
+  font-weight: bold;
+  margin: 0;
+  display: block;
+  font-size: 150px;
+  margin-top: 15px;
+}
+
+#container {
+  border-radius: 10px;
+  width: 480px;
+  height: 480px;
+  padding: 10px;
+  background-color: #bbada0;
+  position: relative;
+
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #cdc0b4;
+  border-radius: 10px;
+  position: absolute;
+
+
+
+}
+
+.cell-2 {
+  color: #7e746a;
+  background-color: #eee4da;
+  font-size: 80px;
+  text-align: center;
+  z-index: 999;
+}
+
+.cell-4 {
+  text-align: center;
+  vertical-align: middle;
+  color: #766e66;
+  background-color: #ece0ca;
+  font-size: 80px;
+  z-index: 999;
+}
+
+.cell-8 {
+  text-align: center;
+  color: #fcf7ef;
+  background-color: #ece0ca;
+  font-size: 80px;
+  z-index: 999;
+}
+
+.cell-16 {
+  text-align: center;
+  color: #fefefe;
+  background-color: #ec8d53;
+  font-size: 80px;
+  z-index: 999;
+}
+
+.cell-32 {
+  text-align: center;
+  color: #fefefe;
+  background-color: #f57c5f;
+  font-size: 80px;
+  z-index: 999;
+}
+
+.cell-64 {
+  text-align: center;
+  color: #fefefe;
+  background-color: #e95839;
+  font-size: 80px;
+  z-index: 999;
+}
+
+.cell-128 {
+  text-align: center;
+  color: #fefefe;
+  background-color: #f4d86d;
+  line-height: 150%;
+  font-size: 60px;
+  z-index: 999;
+}
+
+.cell-256 {
+  text-align: center;
+  color: #fefefe;
+  line-height: 150%;
+  font-size: 60px;
+  background-color: #9bb5ab;
+  z-index: 999;
+}
+
+.cell-512 {
+  text-align: center;
+  color: #fefefe;
+  background-color: #e4c02a;
+  line-height: 150%;
+  font-size: 60px;
+  z-index: 999;
+}
+
+.cell-1024 {
+  text-align: center;
+  color: #fefefe;
+  line-height: 250%;
+  background-color: #ecc400;
+  font-size: 40px;
+  z-index: 999;
+}
+
+.cell-2048 {
+  text-align: center;
+  color: #fefefe;
+  line-height: 250%;
+  background-color: #ecc400;
+  font-size: 40px;
+  z-index: 999;
+}
+
+body {
+  background-color: #faf8ef;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  background: #bbada0;
+  padding: 15px 15px;
+  font-size: 25px;
+  height: 58px;
+
+  font-weight: bold;
+  border-radius: 4px;
+  color: white;
+  margin-right: 200px;
+  text-align: center;
+}
