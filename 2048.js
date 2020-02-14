@@ -1,6 +1,6 @@
-class MyArray {
-  constructor() {
-    this.arr = new Array();
+class MyArray {//the rule of name var
+  constructor() {// constructor
+    this.arr = new Array();//var of class
     for (var i = 0; i < 4; i++) {
       this.arr[i] = new Array();
       for (var j = 0; j < 4; j++) {
@@ -8,14 +8,14 @@ class MyArray {
       }
     }
   }
-  init() {
+  init() {// no need to add "function" behind the function name
     for (var i = 0; i < 4; i++) {
       for (var j = 0; j < 4; j++) {
         this.setValue(i, j, 0);
       }
     }
   }
-  setValue(x, y, val) {
+  setValue(x, y, val) {// the format of function name
     var id = "cell-" + x + "-" + y;
     var cell = document.getElementById(id);
     cell.remove();
@@ -41,7 +41,7 @@ class MyArray {
   randomInt(min, max) {
     return parseInt(Math.random() * (max - min + 1) + min, 10);
   }
-  getRamdomPosition() {
+  getRandomPosition() {
     var posPos = new Array();
     for (var i = 0; i < 4; i++) {
       for (var j = 0; j < 4; j++) {
@@ -60,12 +60,12 @@ class MyArray {
     return posPos[pos]; //return [i,j] a possible position
   }
   setValueInRandomPosition(num) {
-    var pos = this.getRamdomPosition();
+    var pos = this.getRandomPosition();
     return this.setValue(pos[0], pos[1], num);
   }
   cellScale(cell) {
     cell.animate([{ transform: "scale(0.2) " }, { transform: "scale(1) " }], {
-      duration: INTERVEL
+      duration: INTERVAL
     });
   }
   cellMoveTo(cell, x, y) {
@@ -76,7 +76,7 @@ class MyArray {
     var cell = $("#cell-" + cellx + "-" + celly);
 
     // cell.animate({ "left": left+"px", "top": top+"px" }, "slow");
-    cell.animate({ left: left, top: top }, INTERVEL);
+    cell.animate({ left: left, top: top }, INTERVAL);
   }
 }
 function getCellPosLeftAndTop(x, y) {
@@ -217,10 +217,10 @@ function pressKey(keyCode) {
     updateView(tmp, keyCode);
     var cell = CELLS.setValueInRandomPosition(2);
     CELLS.cellScale(cell);
-  }, INTERVEL);
+  }, INTERVAL);
 }
 
-function arrageCells(){
+function arrangeCells(){
   for(var i=0;i<4;i++){
     for (var j=0;j<4;j++){
         var tmp=document.getElementById('cell-'+i+'-'+j)
@@ -248,9 +248,9 @@ function newGame(){
 $("#newgame").click(function () { 
   newGame()
 });
-var INTERVEL = 200;
+var INTERVAL = 200;
 var SCORE = 0;
 var CELLS = new MyArray();
-arrageCells()
+arrangeCells()
 
 
