@@ -246,6 +246,11 @@ function newGame(){
   };
 }
 $("#newgame").click(function () { 
+  for(var i=0;i<4;i++){
+    for(var j=0;j<4;j++){
+      CELLS.setValue(i,j,0)
+    }
+  }
   newGame()
 });
 var INTERVAL = 200;
