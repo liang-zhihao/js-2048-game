@@ -4,4 +4,4 @@
 
 This is my small practice for learning javascript and css
 
-Run: https://liang-zhihao.github.io/js-2048-game/
+Run: https://liang-zhihao.github.io/js-2048-game/2048.html
